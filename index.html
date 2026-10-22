@@ -8,7 +8,8 @@
 <meta name="theme-color" content="#050b18" id="themeColor">
 <script>try{if(localStorage.getItem('sf_red')==='1'){document.documentElement.classList.add('red');document.getElementById('themeColor').content='#000000'}}catch(e){}</script>
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>STAR STORY · ส่องดาว</title>
+<title>STAR STORY · ตำนานดาว</title>
+<meta name="apple-mobile-web-app-title" content="STAR STORY">
 <style>
 :root{--bg:#050b18;--panel:rgba(9,18,35,.88);--line:#27405f;--gold:#ffd98a;--cyan:#7cc8ff;--muted:#9fb3cc;--text:#eef4ff}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -57,7 +58,7 @@ input[type=range]{flex:1;accent-color:#e7bd70}
 #status{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5}
 #status.warn{color:#ffb38a}
 #intro{position:fixed;inset:0;z-index:10;background:radial-gradient(ellipse at 50% 30%,#14305a 0%,#050b18 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;text-align:center}
-#intro h1{font-size:30px;margin:0 0 6px}#intro h1 span{color:var(--gold)}
+#intro h1{font-size:30px;margin:0 0 6px;letter-spacing:.06em}#intro h1 span{color:var(--gold)}
 #intro p{color:var(--muted);font-size:14px;line-height:1.6;max-width:360px;margin:6px 0}
 #startBtn{margin-top:22px;background:#e7bd70;color:#14213a;border:0;border-radius:14px;padding:15px 30px;font-size:17px;font-weight:700;cursor:pointer}
 #noSensorBtn{margin-top:12px;background:none;border:0;color:var(--cyan);font-size:14px;text-decoration:underline;cursor:pointer}
@@ -116,7 +117,7 @@ input[type=range]{flex:1;accent-color:#e7bd70}
 </div>
 
 <div id="intro">
-  <h1>✨ Star <span>Finder</span></h1>
+  <h1>✨ STAR <span>STORY</span></h1>
   <p>ยกมือถือขึ้นฟ้า แล้วหมุนไปรอบ ๆ แอปจะใช้ <b>GPS + เวลา + เข็มทิศ + ไจโร</b> คำนวณว่าคุณกำลังชี้ไปที่กลุ่มดาวอะไร</p>
   <p>เมื่อกดเริ่ม เบราว์เซอร์จะขอสิทธิ์ <b>Motion &amp; Orientation</b> และ <b>Location</b> — กด “อนุญาต” ทั้งสองอย่าง</p>
   <p id="introWarn"></p>
